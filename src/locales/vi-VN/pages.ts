@@ -1,0 +1,22 @@
+export default {
+	'hrm.title': "Lịch Như Ý",
+	'login.title': "Đăng nhập Lịch Như Ý",
+	'login.welcome': "Chào mừng đến với Lịch Như Ý",
+	'login.username': "Tài khoản",
+	'login.password': "Mật khẩu",
+	'login.button': "Đăng nhập",
+	'login.username_required': 'Vui lòng nhập tài khoản',
+	'login.password_required': 'Vui lòng nhập mật khẩu',
+	'common.search': 'Tìm kiếm',
+	'common.create': 'Thêm mới',
+	'common.confirm_delete': 'Bạn có chắc chắn muốn xóa bản ghi này không?',
+	'common.save': 'Lưu',
+	'common.cancel': 'Hủy',
+	'common.confirm': 'Xác nhận',
+	'news.title': 'Tiêu đề',
+	'news.image': 'Hình ảnh',
+	'common.emptyText': 'Không có dữ liệu',
+	'news.description': 'Mô tả',
+	'news.url': 'URL',
+	'news.url_placeholder': 'Đường dẫn: https://...'
+}

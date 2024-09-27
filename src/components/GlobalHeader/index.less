@@ -1,0 +1,154 @@
+@import (reference) '~antd/es/style/themes/index';
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+
+.menu {
+    :global(.anticon) {
+        margin-right: 8px;
+    }
+
+    :global(.ant-dropdown-menu-item) {
+        min-width: 160px;
+    }
+}
+
+.right {
+    display: flex;
+    float: right;
+    height: 48px;
+    margin-left: auto;
+    overflow: hidden;
+
+    .action {
+        display: flex;
+        align-items: center;
+        height: 48px;
+        padding: 0 12px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        >span {
+            vertical-align: middle;
+        }
+
+        &:hover {
+            background: @pro-header-hover-bg;
+        }
+
+        &:global(.opened) {
+            background: @pro-header-hover-bg;
+        }
+    }
+
+    .search {
+        padding: 0 12px;
+
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    .account {
+        .avatar {
+            margin-right: 8px;
+            vertical-align: top;
+            background: rgba(255, 255, 255, 0.85);
+        }
+    }
+}
+
+.dark {
+    .action {
+        &:hover {
+            background: #252a3d;
+        }
+
+        &:global(.opened) {
+            background: #252a3d;
+        }
+    }
+}
+
+@media only screen and (max-width: @screen-md) {
+    :global(.ant-divider-vertical) {
+        vertical-align: unset;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .right {
+        position: absolute;
+        top: 0;
+        right: 12px;
+
+        .account {
+            .avatar {
+                margin-right: 0;
+            }
+        }
+
+        .search {
+            display: none;
+        }
+    }
+}
+
+.menuInfo {
+    .infoUser {
+        text-align: center;
+        border: 1px solid #F0F0F0;
+        padding: 16px;
+
+        .nameUser {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #262626;
+            padding-top: 5px;
+        }
+
+        .emailUser {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: #8C8C8C;
+        }
+    }
+
+    .listAction {
+        padding: 16px 16px 0px 16px;
+
+        .itemAction {
+            padding-bottom: 16px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #262626;
+            cursor: pointer;
+        }
+    }
+}
+
+.close {
+    color: #bfbfbf;
+    border: 1px solid #d9d9d9;
+}
+
+.save {
+    color: #ffffff;
+    background: #2cb05c;
+    border: 1px solid #d9d9d9;
+}
+
+.textNote {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8C8C8C;
+    position: relative;
+    top: -5px;
+}
